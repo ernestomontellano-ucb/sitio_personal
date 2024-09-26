@@ -1,0 +1,143 @@
+/* FUENTE TIPOGRÁFICA */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESETEO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* SISTEMA DE DISEÑO: PALETA DE COLOR */
+    --color1:#D2BBF2;
+    --color2:#0f0427;
+    --color3:#7E5EF2;
+    --color4:#9D85F2;
+    --color5:#182E59;
+    --color6:#CFC5D4;
+    --color7:#D3DDF0;
+    --color8:#f2f3f3;
+    --color9:#000;
+    --color10:#29282a;
+
+    --background1:var(--color7);
+/* SISTEMA DE DISEÑO: SPACERS */
+    --spacer101: 5.61rem;
+    --spacer76:4.209rem;
+    --spacer57:4.209rem;
+    --spacer43:2.368rem;
+    --spacer32:1.777rem;
+    --spacer24:1.333rem;
+    --spacer18:1rem;
+    --spacer13:0.75rem;
+    --spacer10:0.6rem;
+
+
+
+}
+html{
+    cursor:url("../images/circle.svg"), auto;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing:-0.03em;
+    background:linear-gradient(0deg, var(--color5) 0%, var(--color2) 50%, var(--color9) 100%);
+    min-height: 100vh;
+
+}
+h1{
+    font-size:var(--spacer101);
+    color: var(--color5);
+    margin-bottom: 1em;
+}
+h2{
+    font-size:var(--spacer76);
+}
+h3{
+    font-size:var(--spacer57);
+}
+h4{ 
+    font-size:var(--spacer43);
+}
+p{
+    font-size:var(--spacer18);
+}
+
+.home{
+    max-width: calc(var(--spacer101)*16);
+    margin: var(--spacer24) auto;
+    padding: var(--spacer43);
+    border-left: 3px solid var(--color5);
+    background: var(--color8); 
+    
+
+}
+
+
+.home header h1{
+    font-size: var(--spacer43);
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+
+}
+.home h2{
+    font-weight: 100;
+}
+.home header{
+    margin-bottom: var(--spacer57);
+    display: flex;
+    gap:var(--spacer24);
+    justify-content: space-between;
+    border-bottom: 3px solid var(--color7);
+    align-items: center;
+    padding-bottom: var(--spacer57);
+}
+.home nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: start;
+}
+.home nav ul li a{
+    display: block;
+    background: var(--color8);
+    padding: var(--spacer10) var(--spacer13); 
+    text-decoration: none;
+    font-size: var(--spacer13);
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: var(--color5);
+    text-transform: uppercase;
+    transition: all 500ms;
+}
+.home nav ul li a:hover{
+    background: var(--color5);
+    color: var(--color8);
+}
+.home main{
+   
+}
+.home main p{
+    margin-bottom: var(--spacer57);
+    font-size: var(--spacer76);
+    color: var(--color10);
+}
+.home main p em{
+    color: var(--color3);
+}
+
+.home main .ornamento{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto var(--spacer57) auto;
+    display: block;
+    fill: var(--color6);
+    transition: all 1s;
+}
+.home main .ornamento:hover{
+    fill: var(--color3);
+}
+
